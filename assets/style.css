@@ -1,0 +1,531 @@
+* {
+  padding: 0%;
+  margin: 0%;
+}
+
+html,
+body {
+  position: relative;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+}
+
+.logo {
+  position: absolute;
+  z-index: 2;
+  width: 200px;
+  padding: 0px 0px 0px 0px;
+  left: -20px;
+  top: -15px;
+  background: none;
+}
+
+.logotext {
+  position: absolute;
+  z-index: 2;
+  width: 200px;
+  padding: 0px 0px 0px 0px;
+  left: 120px;
+  top: -20px;
+  background: none;
+}
+
+.text {
+  position: absolute;
+  left: 60px;
+  z-index: 2;
+  background: none;
+  font-family: font1;
+  font-size: 141px;
+  line-height: -60px;
+  top: 230px;
+  color: white;
+}
+#text1 {
+  top: 327px;
+}
+#text2 {
+  top: 327px;
+}
+
+#menu {
+  position: absolute;
+  z-index: 2;
+  background: none !important;
+  right: 39px;
+
+  display: flex;
+}
+
+.collection-btn {
+  position: absolute;
+  background: none;
+  left: 60px;
+  z-index: 3;
+  padding: 8px 19px 8px 24px;
+  border-radius: 21px;
+  color: white;
+  border-color: white;
+  top: 460px;
+  font-family: font2;
+}
+
+#menu div {
+  background: none;
+  display: flex;
+}
+
+#menu div ul {
+  background: none;
+  padding: 67px 30px 0px 5px;
+}
+
+#menu div ul li {
+  background: none;
+  list-style: none;
+  display: block;
+  width: 100px;
+}
+
+#menu div ul li a {
+  background: none;
+  font-family: font2;
+  color: white;
+  text-decoration: none;
+}
+#menu div ul li a:hover {
+  color: #afa52e;
+  font-size: 15px;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+.wrapprtyeryer {
+  color: #346734 #1a5632 #afa52e #7cc242 #035e31;
+}
+@font-face {
+  font-family: font1;
+  src: url(/assets/fonts/MIKELALIGHT.TTF);
+}
+
+@font-face {
+  font-family: font2;
+  src: url(/assets/fonts/Brandon_reg.otf);
+}
+@font-face {
+  font-family: font3;
+  src: url(/assets/fonts/BebasNeue.otf);
+}
+@font-face {
+  font-family: font4;
+  src: url(/assets/fonts/SOPHILLIA-WEBFONT.TTF);
+}
+@font-face {
+  font-family: font5;
+  src: url(/assets/fonts/SOPHILLIA.OTF);
+}
+@font-face {
+  font-family: font6;
+  src: url(/assets/fonts/Brandon_bld.otf);
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about h1 {
+  font-family: font1;
+  font-size: 46px;
+  padding: 40px 0px 0px 0px;
+  color: #1a5632;
+}
+
+.news h1 {
+  font-family: font1;
+  font-size: 46px;
+  padding: 50px 0px 40px 0px;
+  color: #1a5632;
+}
+
+p {
+  font-family: font2;
+}
+
+#more {
+  display: none;
+}
+
+.about {
+  margin: 0px 0px 0px 0px;
+}
+
+#readbtn {
+  background: none;
+  border: none;
+  font-family: font2;
+  cursor: pointer;
+}
+
+.collection h1 {
+  font-family: font1;
+  font-size: 46px;
+  padding: 50px 0px 40px 0px;
+  color: #1a5632;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+/* body{
+  display: flex;
+  padding: 0 35px;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background: #343F4F;
+} */
+.wrapper {
+  display: flex;
+  max-width: 1200px;
+  position: relative;
+}
+.wrapper i {
+  top: 50%;
+  height: 44px;
+  width: 44px;
+  color: #343f4f;
+  cursor: pointer;
+  font-size: 1.15rem;
+  position: absolute;
+  text-align: center;
+  line-height: 44px;
+  background: #fff;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  transition: transform 0.1s linear;
+}
+.wrapper i:active {
+  transform: translateY(-50%) scale(0.9);
+}
+.wrapper i:hover {
+  background: #f2f2f2;
+}
+.wrapper i:first-child {
+  left: -22px;
+  display: none;
+}
+.wrapper i:last-child {
+  right: -22px;
+}
+.wrapper .carousel {
+  font-size: 0px;
+  cursor: pointer;
+  overflow: hidden;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+  margin-left: 20px;
+}
+.carousel.dragging {
+  cursor: grab;
+  scroll-behavior: auto;
+}
+.carousel.dragging img {
+  pointer-events: none;
+}
+.carousel img {
+  height: 500px;
+  object-fit: cover;
+  user-select: none;
+  margin-left: 14px;
+  width: calc(100% / 3);
+}
+.carousel img:first-child {
+  margin-left: 0px;
+}
+@media screen and (max-width: 900px) {
+  .carousel img {
+    width: calc(100% / 2);
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .carousel img {
+    width: 100%;
+  }
+  #left {
+    margin-left: 22px;/
+  }
+  .wrapper .carousel {
+    margin-left: 20px;
+  }
+}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  background: #fffffff1;
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 60px;
+  text-align: center;
+}
+
+/* Next & previous buttons */
+/* .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: #888;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+   */
+/* Position the "next button" to the right */
+/* .next {
+    position: absolute;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+   */
+/* On hover, add a black background color with a little bit see-through */
+/* .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+
+  } */
+
+/* The dot/bullet/indicator container */
+.dot-container {
+  text-align: center;
+  padding: 20px;
+  background: #ddd;
+  display: none;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Add an italic font style to all quotes */
+q {
+  font-style: italic;
+}
+
+/* Add a blue color to the author */
+.author {
+  color: #afa52e;
+}
+
+.mySlides p {
+  font-size: 20px;
+}
+
+.testimonials h1 {
+  font-family: font1;
+  font-size: 46px;
+  padding: 50px 0px 0px 0px;
+  color: #1a5632;
+}
+
+.news-container {
+  display: flex;
+  flex-direction: column;
+}
+.news div {
+  display: flex;
+}
+.news-img img {
+  width: 400px;
+}
+
+.news-text {
+  background: #1a5632;
+  width: 100%;
+  flex-direction: column;
+  margin: 0px 0px 0px 8px;
+  color: #fff;
+
+  padding: 55px 305px 0px 31px;
+}
+.news-text h3 {
+  font-family: font1;
+  font-size: 30px;
+}
+.news-text p {
+  font-size: 18px;
+}
+
+.updates {
+  display: flex;
+
+  text-align: center;
+  background-color: #afa52e;
+  height: 45px;
+  margin-top: 10px;
+
+  text-align: center;
+}
+
+.updates a {
+  font-family: font2;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  text-align: center;
+  margin: auto;
+}
+.updates a:hover {
+  color: rgb(222, 222, 222);
+}
+
+.com {
+  width: 100%;
+}
+
+.com img {
+  width: 100%;
+}
+
+footer {
+  /* background-image: url(/assets/img/pagw2.jpg) ; */
+  background-color: #1a5632;
+  display: flex;
+  height: 200px;
+  margin: auto;
+}
+
+.icons {
+  padding: 35px 0px 0px 300px;
+  margin: 0px 0px 0px 0px;
+}
+.details {
+  padding: 35px 1px 4px 87px;
+}
+.details p {
+  color: white;
+  font-family: font2;
+  font-size: 16px;
+  padding: 0px 4px 3px 0px;
+}
+
+.icons i {
+  color: white;
+  font-size: 28px;
+  padding: 6px 10px 0px 0px;
+}
+.icons p {
+  color: white;
+  font-size: 17px;
+}
+
+@media only screen and (max-width: 450px) {
+
+
+  .text {
+    position: absolute;
+    left: 25px;
+    font-size: 69px;
+    top: 119px;
+  }
+
+  .wrapper i:last-child {
+    right: 7px;
+  }
+
+  .news-img img {
+    width: 100%;
+  }
+
+  #left {
+    margin-left: 52px;
+  }
+
+  #text2 {
+    top: 251px;
+    font-size: 36px;
+      font-family: font5;
+  }
+
+  #text1 {
+    top: 187px;
+  }
+
+  .collection-btn {
+    left: 30px;
+    top:350px
+  }
+
+    .about {
+    margin: 0px 45px 0px 45px;
+}
+p {
+    font-family: font2;
+    font-size: 16px;
+}
+
+.swiper {
+    height: 80%;
+}
+
+
+.mySlides{
+  height: 64px;
+}
+
+
+}
