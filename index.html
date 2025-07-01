@@ -1,124 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jewel - Jewelry Shop</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/assets/style.css">
-  <link rel="shortcut icon" href="/assets/img/logojjn.png" type="image/x-icon">
-  <link rel="stylesheet" href="https://kit.fontawesome.com/1f20ea4e22.css" crossorigin="anonymous">
-  <title>swetasfine</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 
 
-</head>
 
-<body>
+  <body>
 
-  <!-- <img class="logo" src="/assets/img/logojjn.png" alt="">
-  <img class="logotext" src="/assets/img/logotext.png" alt=""> -->
-
+    
   <h1 class="text">Elegance</h1>
   <h1 class="text" id="text1">Radiance</h1>
   <h1 class="text" id="text2">by Madira</h1>
-  <!-- <section id="menu">
-    <div>
-
-      <ul>
-        <li><a href="">ABOUT US</a></li>
-      </ul>
-      <ul>
-        <li><a href="">COLLECTION</a></li>
-      </ul>
-      <ul>
-        <li><a href="">TESTIMONIALS </a></li>
-      </ul>
-      <ul>
-        <li><a href="">IN THE NEWS</a></li>
-      </ul>
-      <ul>
-        <li><a href="">CONTACT US</a></li>
-      </ul>
-
+    <!-- <button class="collection-btn">VIEW COLLECTION</button> -->
+    <div id="buy-popup">
+      <button
+        class="cross-btn"
+        onclick="document.getElementById('buy-popup').style.display='none'">
+        &times;
+      </button>
+      <h3>Buy Direct on Instagram</h3>
+      <p>Click below to DM us and order your favorite jewelry.</p>
+      <a
+        class="order-btn"
+        href="https://www.instagram.com/elegance_radiance.by_madira/"
+        target="_blank">Order via Instagram</a>
     </div>
-  </section> -->
-  <button class="collection-btn">VIEW COLLECTION</button>
-
-
-  <!-- Swiper -->
-  <div class="swiper mySwiper">
-    <div class="swiper-wrapper">
-      <!-- <div class="swiper-slide"><img src="/assets/img/main123.webp" alt=""></div> -->
-      <div class="swiper-slide"><img src="/assets/img/page4.jpg" alt=""></div>
-      <div class="swiper-slide"><img src="/assets/img/odjo.jpg" alt=""></div>
-
-      <div class="swiper-slide"><img src="/assets/img/kfnks.jpg" alt=""></div>
-      <div class="swiper-slide"><img src="/assets/img/hifr.webp" alt=""></div>
-      <div class="swiper-slide"><img src="/assets/img/pagw2.jpg" alt=""></div>
-    </div>
-    <!-- <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div> -->
-    <!-- <div class="swiper-pagination"></div> -->
-  </div>
-
-  <!-- Swiper JS -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-
-
-
-
-  <section class="about">
-    <center>
-      <h1>About us</h1><br>
-
-
-      <p>
-        We are known for our exclusive designs, quality, and a wide variety of <br>
-        the products, all handcrafted with love. With master artisans in our team, <br>
-        we strive for high standards of craftsmanship.<span id="dots">...</span><br>
-        We are known for our exclusive designs, quality, and a wide variety of <br>
-      <p id="more">
-        
-        the products, all handcrafted with love. With master artisans in our team, <br>
-        we strive for high standards of craftsmanship. <br>
-        We are known for our exclusive designs, quality, and a wide variety of <br>
-        the products, all handcrafted with love. With master artisans in our team, <br>
-        we strive for high standards of craftsmanship.
-      </p> <br><br>
-      <button onclick="myFunction()" id="readbtn">READ MORE</button>
-    </center>
-  </section>
-  <section class="collection">
-    <center>
-      <h1>Our Collection</h1>
-      <div class="wrapper">
-        <i id="left" class="fa-solid fa-angle-left"></i>
-        <div class="carousel">
-          <img src="assets/img/main2.png" alt="img" draggable="false">
-          <img src="assets/img/main1.png" alt="img" draggable="false">
-          <img src="assets/img/main29.png" alt="img" draggable="false">
-          <img src="assets/img/main1.png" alt="img" draggable="false">
-          <img src="assets/img/main1.png" alt="img" draggable="false">
-          <img src="assets/img/main2.png" alt="img" draggable="false">
-          <img src="assets/img/main1.png" alt="img" draggable="false">
-          <img src="assets/img/main1.png" alt="img" draggable="false">
-          <img src="assets/img/main2.png" alt="img" draggable="false">
-        </div>
-        <i id="right" class="fa-solid fa-angle-right"></i>
+    <header>Limited-Time Offer: Mid-Season Sale Up to 70% Off</header>
+    <nav>
+      <div class="logo">
+        Elegance <br />
+        Radiance
       </div>
-    </center>
 
+      <!-- <ul>
+      <li><a href="#">Rings</a></li>
+      <li><a href="#">Necklaces</a></li>
+      <li><a href="#">Earrings</a></li>
+      <li><a href="#">Bracelets</a></li>
+      <li><a href="#">Watches</a></li>
+      <li><a href="#">Brands</a></li>
+    </ul> -->
 
+      <div>
+        <a href="https://www.instagram.com/elegance_radiance.by_madira/">
+          <button href="https://www.instagram.com/elegance_radiance.by_madira/">Buy Now</button>
+        </a>
+ 
+      </div>
+    </nav>
+    <section class="slider">
+      <div
+        class="slide active"
+        style="background-image: url('/assets/5.2.jpg')"
+      >
+        <!-- <div class="caption">Elegant Jewelry</div> -->
+            <button  class="caption">VIEW COLLECTION</button>
+      </div>
+      <div class="slide" style="background-image: url('/assets/2.3.jpg')">
+        <button class="caption">VIEW COLLECTION</button>
+      </div>
+      <div class="slide" style="background-image: url('/assets/1.2.jpg')">
+<button class="caption">VIEW COLLECTION</button>
+      </div>
+      <div class="slide" style="background-image: url('/assets/4.3.jpg')">
+        <button class="caption">VIEW COLLECTION</button>
+        
+      </div>
+      <div class="slider-controls">
+        <span class="dot active" onclick="setSlide(0)"></span>
+        <span class="dot" onclick="setSlide(1)"></span>
+        <span class="dot" onclick="setSlide(2)"></span>
+        <span class="dot" onclick="setSlide(3)"></span>
+      </div>
+    </section>
 
-  </section>
+    <!-- <section class="hero">
+      <h1>Cosmour</h1>
+      <p>Delicately crafted beauty for your timeless moments</p>
+      <button>Shop the Collection</button>
+    </section> -->
 
+        <section class="about">
+      <h2>About Us</h2>
+      <p>
+        At Jewel, we believe that jewelry is more than just an accessory—it's a
+        statement of elegance, love, and legacy. With a passion for perfection
+        and a commitment to timeless beauty, our pieces are designed to
+        celebrate the most cherished moments in your life. Discover artisanal
+        craftsmanship and luxurious materials in every ring, necklace, bracelet,
+        and earring we offer.
+      </p>
+    </section>
 
-
-
-
-
-  <section class="testimonials">
+    <section class="collections">
+      <h2>Featured Collections</h2>
+      <div class="collections-grid">
+        <div class="card">
+          <img src="/assets/1.jpg" alt="Diamond Rings" />
+          <p>Earrings</p>
+        </div>
+        <div class="card">
+          <img src="/assets/2.jpg" alt="Bracelets" />
+          <p>Rings</p>
+        </div>
+        <div class="card">
+          <img src="/assets/3.jpg" alt="Wedding Rings" />
+          <p>Rings</p>
+        </div>
+        <div class="card">
+          <img src="/assets/4.jpg" alt="Earrings" />
+          <p>chains</p>
+        </div>
+        <div class="card">
+          <img src="/assets/5.jpg" alt="Earrings" />
+          <p>Chains</p>
+        </div>
+        <div class="card">
+          <img src="/assets/6.jpg" alt="Earrings" />
+          <p>Earrings</p>
+        </div>
+        <div class="card">
+          <img src="/assets/7.jpg" alt="Earrings" />
+          <p>Bracelets</p>
+        </div>
+      </div>
+    </section>
+              <section class="testimonials">
     <center>
 
 
@@ -141,64 +157,39 @@
           <p class="author">- Thomas A. Edison</p>
 
           <div class="dot-container">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot1" onclick="currentSlide(1)"></span>
+            <span class="dot1" onclick="currentSlide(2)"></span>
+            <span class="dot1" onclick="currentSlide(3)"></span>
           </div>
     </center>
   </section>
-  <section class="news">
-    <center>
-      <h1>In the news</h1>
-    </center>
-    <div class="new-container">
-      <div class="news-img"><img src="/assets/img/contact.webp" alt=""></div>
-      <!-- <div class="news-text">
-
-        <h3>NEWS HEADLINE HERE</h3>
-        <p>We stand to unveil Oxford Boulevard the one of the kind
-          Ingeniously Smart project by Iman Developers. Bringing to
-          realization the Ingenious Smart Project with tebis KNX and
-          Berker by Hager design, intuitive home automation.</p>
+    
 
 
-      </div> -->
-    </div>
-    <div class="updates">
-      <a href="">VIEW ALL UPDATES</a>
-    </div>
-    <div class="com">
-      <img src="/assets/img/com.png" alt="">
+    <footer>
+      <div>
+        <h3>Customer Service</h3>
+        <ul>
+          <li><a href="https://www.instagram.com/elegance_radiance.by_madira/">Help Center</a></li>
+          <li><a href="https://www.instagram.com/elegance_radiance.by_madira/">Returns</a></li>
+          <li><a href="https://www.instagram.com/elegance_radiance.by_madira/">Shipping Info</a></li>
+          <li><a href="https://www.instagram.com/elegance_radiance.by_madira/">Contact Us</a></li>
+        </ul>
+      </div>
 
-    </div>
-  </section>
+      <div>
+        <h3>Follow Us</h3>
+        <ul>
+          <li><a href="https://www.instagram.com/elegance_radiance.by_madira/">Instagram</a></li>
+          <li><a href="https://www.instagram.com/elegance_radiance.by_madira/">Pinterest</a></li>
 
-
-
-
-
-<!-- footer------------------ -->
-
-  <!-- <footer>
-    <div class="details">
-      <p>Soham Shyam Creatives: Regd Off: 20, Amratala St, Kolkata 700 001, India</p>
-      <p>Ph: +91 124 4015725</p>
-      <p>E-mail: info@swetasfinejewelry.com</p>
-    </div>
-    <div class="icons">
-
-      <p>Follow us:</p>
-      <a href=""><i class="fa-brands fa-instagram"></i></a>
-      <a href=""><i class="fa-brands fa-facebook"></i></a>
-      <a href=""><i class="fa-brands fa-twitter"></i></a>
-      <a href=""><i class="fa-brands fa-whatsapp"></i></a>
-    </div>
-  </footer> -->
-
-
-
-  <script src="/assets/script.js"></script>
-  <script src="https://kit.fontawesome.com/1f20ea4e22.js" crossorigin="anonymous"></script>
-</body>
-
+        </ul>
+      </div>
+      <div class="copyright">&copy; 2025 Elegance Radiance. All Rights Reserved.</div>
+    </footer>
+    <script src="/script.js"></script>
+  </body>
 </html>
+
+
+
